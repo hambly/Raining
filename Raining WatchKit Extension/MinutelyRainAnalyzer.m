@@ -63,7 +63,6 @@
 
 - (RainType)analyzeRainArray:(NSArray *)array {
     
-    
     NSDictionary *initialConditions = array[0];
     if (initialConditions[@"precipType"]){
         self.isRaining = [self isProbable:initialConditions];
@@ -73,16 +72,11 @@
     if (finalConditions[@"precipType"]){
         self.willContinueRaining = [self isProbable:finalConditions];
     }
-                        
     
     for (NSDictionary *rainDict in array){
         
         if (rainDict[@"precipType"] && !self.isRaining && !self.willRain){
             self.willRain = [self isProbable:rainDict];
-        }
-        
-        if (!rainDict[@"precipType"] && self.isRaining){
-            self.willContinueRaining = NO;
         }
         
         if (rainDict[@"precipIntensity"]){
@@ -91,8 +85,6 @@
                 self.isHeavy = YES;
             }
         }
-        
-
         
     }
     
