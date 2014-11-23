@@ -17,6 +17,33 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSMutableSet* categories = [NSMutableSet set];
+    
+    
+    UIMutableUserNotificationAction* openAction = [[UIMutableUserNotificationAction alloc] init];
+    openAction.title = @"Open";
+    openAction.identifier = @"open";
+    openAction.activationMode = UIUserNotificationActivationModeForeground;
+    openAction.authenticationRequired = NO;
+    
+    UIMutableUserNotificationCategory* watchCategory = [[UIMutableUserNotificationCategory alloc] init];
+    [watchCategory setActions:@[openAction]
+                    forContext:UIUserNotificationActionContextDefault];
+    watchCategory.identifier = @"watch";
+    
+    [categories addObject:watchCategory];
+
+    
+    UIUserNotificationType types = UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert;
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:types categories:categories];
+    
+    [application registerUserNotificationSettings:settings];
+    
+    if ([launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey]) {
+        [self handleLocalNotification:[launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey]];
+    }
+    
     return YES;
 }
 
@@ -40,6 +67,22 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+    [self handleLocalNotification:notification];
+}
+
+- (void)handleLocalNotification:(UILocalNotification *)notification {
+    
+    [[[UIAlertView alloc] initWithTitle:notification.alertBody message:nil delegate:nil cancelButtonTitle:notification.alertAction otherButtonTitles: nil] show];
+    
+}
+
+- (void)application:(UIApplication *)application handleActionWithIdentifier:(NSString *)identifier forLocalNotification:(UILocalNotification *)notification completionHandler:(void (^)())completionHandler {
+    
+    
+    
 }
 
 @end
