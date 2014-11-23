@@ -12,6 +12,7 @@
 @interface NotificationController()
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *label;
 @property (weak, nonatomic) IBOutlet WKInterfaceImage *image;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *todayLabel;
 
 @end
 
@@ -23,7 +24,7 @@
     if (self){
         // Initialize variables here.
         // Configure interface objects here.
-        NSLog(@"%@ init", self);
+//        NSLog(@"%@ init", self);
         
     }
     return self;
@@ -31,12 +32,12 @@
 
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
-    NSLog(@"%@ will activate", self);
+//    NSLog(@"%@ will activate", self);
 }
 
 - (void)didDeactivate {
     // This method is called when watch view controller is no longer visible
-    NSLog(@"%@ did deactivate", self);
+//    NSLog(@"%@ did deactivate", self);
 }
 
 
@@ -47,8 +48,18 @@
     //
     // After populating your dynamic notification interface call the completion block.
     
-    [self.image setImage:[UIImage imageNamed:@"test_notif_image"]];
-    self.label.text = remoteNotification[@"aps"][@"alert"];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",remoteNotification[@"url"],remoteNotification[@"coordinates"]]];
+    
+    [NSURLConnection sendAsynchronousRequest:[NSURLRequest requestWithURL: url] queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+        if (!connectionError){
+            NSDictionary *weatherDict = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+            self.label.text = weatherDict[@"minutely"][@"summary"];
+            self.todayLabel.text = [NSString stringWithFormat:@"%@",weatherDict[@"daily"][@"data"][0][@"summary"]];
+        }
+    }];
+    
+    [self.image setImage:[UIImage imageNamed:@"rain_graph"]];
+    
     
     completionHandler(WKUserNotificationInterfaceTypeCustom);
 }

@@ -8,7 +8,16 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="It's Raining!" id="9ff-J3-aF5">
+                            <fontDescription key="font" type="boldSystem" pointSize="20"/>
+                        </label>
+                        <label width="122" alignment="center" verticalAlignment="center" text="We'll let you know when it's not raining!" textAlignment="center" numberOfLines="0" id="OFg-VF-kIh">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                        </label>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
         </scene>
@@ -47,12 +56,19 @@
             <objects>
                 <controller id="gdX-wl-uQE" customClass="NotificationController">
                     <items>
-                        <imageView alignment="center" id="rtR-NG-Qcd"/>
-                        <label alignment="center" text="Label" id="s3u-C2-03g"/>
+                        <imageView alignment="center" contentMode="scaleAspectFit" id="rtR-NG-Qcd"/>
+                        <label alignment="center" text="Loading..." textAlignment="center" numberOfLines="0" id="s3u-C2-03g">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                        </label>
+                        <label alignment="center" text="Loading..." textAlignment="center" numberOfLines="0" id="TE8-kG-HDM">
+                            <fontDescription key="font" type="system" pointSize="10"/>
+                        </label>
                     </items>
+                    <color key="backgroundColor" white="1" alpha="0.10000000000000001" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="image" destination="rtR-NG-Qcd" id="5G1-N2-VQY"/>
                         <outlet property="label" destination="s3u-C2-03g" id="nEJ-on-0BC"/>
+                        <outlet property="todayLabel" destination="TE8-kG-HDM" id="6Ii-V0-fM8"/>
                     </connections>
                 </controller>
             </objects>

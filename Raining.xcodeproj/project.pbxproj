@@ -666,6 +666,7 @@
 				4DB7A7081A225A7D00DE051B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DB7A7091A225A7D00DE051B /* Build configuration list for PBXNativeTarget "RainingTests" */ = {
 			isa = XCConfigurationList;
@@ -674,6 +675,7 @@
 				4DB7A70B1A225A7D00DE051B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DB7A7331A2261C200DE051B /* Build configuration list for PBXNativeTarget "Raining Watch App" */ = {
 			isa = XCConfigurationList;
@@ -682,6 +684,7 @@
 				4DB7A7351A2261C200DE051B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DB7A7361A2261C200DE051B /* Build configuration list for PBXNativeTarget "Raining WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -690,6 +693,7 @@
 				4DB7A7381A2261C200DE051B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
