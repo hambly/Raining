@@ -2,7 +2,7 @@
     "aps": {
         "alert": "Hello Notification!",
         "title": "Optional title",
-        "category": "myCategory"
+        "category": "raining"
     },
     
     "WatchKit Simulator Actions": [

@@ -11,6 +11,7 @@
 
 @interface NotificationController()
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *label;
+@property (weak, nonatomic) IBOutlet WKInterfaceImage *image;
 
 @end
 
@@ -39,29 +40,19 @@
 }
 
 
-- (void)didReceiveLocalNotification:(UILocalNotification *)localNotification withCompletion:(void (^)(WKUserNotificationInterfaceType))completionHandler {
-    // This method is called when a local notification needs to be presented.
-    // Implement it if you use a dynamic notification interface.
-    // Populate your dynamic notification inteface as quickly as possible.
-    //
-    // After populating your dynamic notification interface call the completion block.
-    
-    self.label.text = localNotification.userInfo[@"alert"];
-    
-    completionHandler(WKUserNotificationInterfaceTypeCustom);
-}
-
-
-/*
 - (void)didReceiveRemoteNotification:(NSDictionary *)remoteNotification withCompletion:(void (^)(WKUserNotificationInterfaceType))completionHandler {
     // This method is called when a remote notification needs to be presented.
     // Implement it if you use a dynamic notification interface.
     // Populate your dynamic notification inteface as quickly as possible.
     //
     // After populating your dynamic notification interface call the completion block.
+    
+    [self.image setImage:[UIImage imageNamed:@"test_notif_image"]];
+    self.label.text = remoteNotification[@"aps"][@"alert"];
+    
     completionHandler(WKUserNotificationInterfaceTypeCustom);
 }
-*/
+
 
 @end
 

@@ -30,9 +30,10 @@
             <objects>
                 <notificationController id="YCC-NB-fut">
                     <items>
+                        <label alignment="left" text="Hello" id="NJV-cu-TWU"/>
                         <label alignment="left" text="Alert Label" id="XkS-y5-khE"/>
                     </items>
-                    <notificationCategory key="notificationCategory" id="JfB-70-Muf"/>
+                    <notificationCategory key="notificationCategory" identifier="raining" id="JfB-70-Muf"/>
                     <connections>
                         <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
                         <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
@@ -46,9 +47,11 @@
             <objects>
                 <controller id="gdX-wl-uQE" customClass="NotificationController">
                     <items>
-                        <label alignment="left" text="Label" id="s3u-C2-03g"/>
+                        <imageView alignment="center" id="rtR-NG-Qcd"/>
+                        <label alignment="center" text="Label" id="s3u-C2-03g"/>
                     </items>
                     <connections>
+                        <outlet property="image" destination="rtR-NG-Qcd" id="5G1-N2-VQY"/>
                         <outlet property="label" destination="s3u-C2-03g" id="nEJ-on-0BC"/>
                     </connections>
                 </controller>
