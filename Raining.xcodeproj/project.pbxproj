@@ -14,6 +14,15 @@
 		4DB7A6F41A225A7D00DE051B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DB7A6F31A225A7D00DE051B /* Images.xcassets */; };
 		4DB7A6F71A225A7D00DE051B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DB7A6F51A225A7D00DE051B /* LaunchScreen.xib */; };
 		4DB7A7031A225A7D00DE051B /* RainingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7A7021A225A7D00DE051B /* RainingTests.m */; };
+		4DB7A7131A2261C200DE051B /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB7A7121A2261C200DE051B /* WatchKit.framework */; };
+		4DB7A71A1A2261C200DE051B /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7A7191A2261C200DE051B /* InterfaceController.m */; };
+		4DB7A71D1A2261C200DE051B /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7A71C1A2261C200DE051B /* NotificationController.m */; };
+		4DB7A7201A2261C200DE051B /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7A71F1A2261C200DE051B /* GlanceController.m */; };
+		4DB7A7221A2261C200DE051B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DB7A7211A2261C200DE051B /* Images.xcassets */; };
+		4DB7A7261A2261C200DE051B /* Raining Watch App.app in Resources */ = {isa = PBXBuildFile; fileRef = 4DB7A7251A2261C200DE051B /* Raining Watch App.app */; };
+		4DB7A72D1A2261C200DE051B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DB7A72C1A2261C200DE051B /* Interface.storyboard */; };
+		4DB7A72F1A2261C200DE051B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DB7A72E1A2261C200DE051B /* Images.xcassets */; };
+		4DB7A7321A2261C200DE051B /* Raining WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4DB7A7101A2261C200DE051B /* Raining WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +33,35 @@
 			remoteGlobalIDString = 4DB7A6E21A225A7D00DE051B;
 			remoteInfo = Raining;
 		};
+		4DB7A7271A2261C200DE051B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DB7A6DB1A225A7D00DE051B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DB7A7241A2261C200DE051B;
+			remoteInfo = "Raining Watch App";
+		};
+		4DB7A7301A2261C200DE051B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DB7A6DB1A225A7D00DE051B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DB7A70F1A2261C200DE051B;
+			remoteInfo = "Raining WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4DB7A7391A2261C200DE051B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4DB7A7321A2261C200DE051B /* Raining WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4DB7A6E31A225A7D00DE051B /* Raining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Raining.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +77,21 @@
 		4DB7A6FC1A225A7D00DE051B /* RainingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RainingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DB7A7011A225A7D00DE051B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DB7A7021A225A7D00DE051B /* RainingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainingTests.m; sourceTree = "<group>"; };
+		4DB7A7101A2261C200DE051B /* Raining WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Raining WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DB7A7121A2261C200DE051B /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
+		4DB7A7161A2261C200DE051B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DB7A7171A2261C200DE051B /* PushNotificationPayload.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PushNotificationPayload.json; sourceTree = "<group>"; };
+		4DB7A7181A2261C200DE051B /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		4DB7A7191A2261C200DE051B /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		4DB7A71B1A2261C200DE051B /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		4DB7A71C1A2261C200DE051B /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		4DB7A71E1A2261C200DE051B /* GlanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
+		4DB7A71F1A2261C200DE051B /* GlanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
+		4DB7A7211A2261C200DE051B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4DB7A7251A2261C200DE051B /* Raining Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Raining Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DB7A72B1A2261C200DE051B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DB7A72C1A2261C200DE051B /* Interface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		4DB7A72E1A2261C200DE051B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +109,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4DB7A70D1A2261C200DE051B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DB7A7131A2261C200DE051B /* WatchKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +125,9 @@
 			children = (
 				4DB7A6E51A225A7D00DE051B /* Raining */,
 				4DB7A6FF1A225A7D00DE051B /* RainingTests */,
+				4DB7A7141A2261C200DE051B /* Raining WatchKit Extension */,
+				4DB7A7291A2261C200DE051B /* Raining Watch App */,
+				4DB7A7111A2261C200DE051B /* Frameworks */,
 				4DB7A6E41A225A7D00DE051B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +137,8 @@
 			children = (
 				4DB7A6E31A225A7D00DE051B /* Raining.app */,
 				4DB7A6FC1A225A7D00DE051B /* RainingTests.xctest */,
+				4DB7A7101A2261C200DE051B /* Raining WatchKit Extension.appex */,
+				4DB7A7251A2261C200DE051B /* Raining Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +184,56 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4DB7A7111A2261C200DE051B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DB7A7121A2261C200DE051B /* WatchKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DB7A7141A2261C200DE051B /* Raining WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4DB7A7181A2261C200DE051B /* InterfaceController.h */,
+				4DB7A7191A2261C200DE051B /* InterfaceController.m */,
+				4DB7A71B1A2261C200DE051B /* NotificationController.h */,
+				4DB7A71C1A2261C200DE051B /* NotificationController.m */,
+				4DB7A71E1A2261C200DE051B /* GlanceController.h */,
+				4DB7A71F1A2261C200DE051B /* GlanceController.m */,
+				4DB7A7211A2261C200DE051B /* Images.xcassets */,
+				4DB7A7151A2261C200DE051B /* Supporting Files */,
+			);
+			path = "Raining WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		4DB7A7151A2261C200DE051B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DB7A7161A2261C200DE051B /* Info.plist */,
+				4DB7A7171A2261C200DE051B /* PushNotificationPayload.json */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4DB7A7291A2261C200DE051B /* Raining Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				4DB7A72C1A2261C200DE051B /* Interface.storyboard */,
+				4DB7A72E1A2261C200DE051B /* Images.xcassets */,
+				4DB7A72A1A2261C200DE051B /* Supporting Files */,
+			);
+			path = "Raining Watch App";
+			sourceTree = "<group>";
+		};
+		4DB7A72A1A2261C200DE051B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DB7A72B1A2261C200DE051B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,10 +244,12 @@
 				4DB7A6DF1A225A7D00DE051B /* Sources */,
 				4DB7A6E01A225A7D00DE051B /* Frameworks */,
 				4DB7A6E11A225A7D00DE051B /* Resources */,
+				4DB7A7391A2261C200DE051B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4DB7A7311A2261C200DE051B /* PBXTargetDependency */,
 			);
 			name = Raining;
 			productName = Raining;
@@ -157,6 +274,39 @@
 			productReference = 4DB7A6FC1A225A7D00DE051B /* RainingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		4DB7A70F1A2261C200DE051B /* Raining WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DB7A7361A2261C200DE051B /* Build configuration list for PBXNativeTarget "Raining WatchKit Extension" */;
+			buildPhases = (
+				4DB7A70C1A2261C200DE051B /* Sources */,
+				4DB7A70D1A2261C200DE051B /* Frameworks */,
+				4DB7A70E1A2261C200DE051B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DB7A7281A2261C200DE051B /* PBXTargetDependency */,
+			);
+			name = "Raining WatchKit Extension";
+			productName = "Raining WatchKit Extension";
+			productReference = 4DB7A7101A2261C200DE051B /* Raining WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		4DB7A7241A2261C200DE051B /* Raining Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DB7A7331A2261C200DE051B /* Build configuration list for PBXNativeTarget "Raining Watch App" */;
+			buildPhases = (
+				4DB7A7231A2261C200DE051B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Raining Watch App";
+			productName = "Raining Watch App";
+			productReference = 4DB7A7251A2261C200DE051B /* Raining Watch App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -172,6 +322,12 @@
 					4DB7A6FB1A225A7D00DE051B = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 4DB7A6E21A225A7D00DE051B;
+					};
+					4DB7A70F1A2261C200DE051B = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					4DB7A7241A2261C200DE051B = {
+						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
@@ -190,6 +346,8 @@
 			targets = (
 				4DB7A6E21A225A7D00DE051B /* Raining */,
 				4DB7A6FB1A225A7D00DE051B /* RainingTests */,
+				4DB7A70F1A2261C200DE051B /* Raining WatchKit Extension */,
+				4DB7A7241A2261C200DE051B /* Raining Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -209,6 +367,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DB7A70E1A2261C200DE051B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DB7A7261A2261C200DE051B /* Raining Watch App.app in Resources */,
+				4DB7A7221A2261C200DE051B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DB7A7231A2261C200DE051B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DB7A72D1A2261C200DE051B /* Interface.storyboard in Resources */,
+				4DB7A72F1A2261C200DE051B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +409,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4DB7A70C1A2261C200DE051B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DB7A71D1A2261C200DE051B /* NotificationController.m in Sources */,
+				4DB7A71A1A2261C200DE051B /* InterfaceController.m in Sources */,
+				4DB7A7201A2261C200DE051B /* GlanceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -240,6 +426,16 @@
 			isa = PBXTargetDependency;
 			target = 4DB7A6E21A225A7D00DE051B /* Raining */;
 			targetProxy = 4DB7A6FD1A225A7D00DE051B /* PBXContainerItemProxy */;
+		};
+		4DB7A7281A2261C200DE051B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DB7A7241A2261C200DE051B /* Raining Watch App */;
+			targetProxy = 4DB7A7271A2261C200DE051B /* PBXContainerItemProxy */;
+		};
+		4DB7A7311A2261C200DE051B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DB7A70F1A2261C200DE051B /* Raining WatchKit Extension */;
+			targetProxy = 4DB7A7301A2261C200DE051B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -395,6 +591,62 @@
 			};
 			name = Release;
 		};
+		4DB7A7341A2261C200DE051B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Raining_WatchKit_Extension;
+				INFOPLIST_FILE = "Raining Watch App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		4DB7A7351A2261C200DE051B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				IBSC_MODULE = Raining_WatchKit_Extension;
+				INFOPLIST_FILE = "Raining Watch App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		4DB7A7371A2261C200DE051B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Raining WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4DB7A7381A2261C200DE051B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Raining WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -420,6 +672,22 @@
 			buildConfigurations = (
 				4DB7A70A1A225A7D00DE051B /* Debug */,
 				4DB7A70B1A225A7D00DE051B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4DB7A7331A2261C200DE051B /* Build configuration list for PBXNativeTarget "Raining Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DB7A7341A2261C200DE051B /* Debug */,
+				4DB7A7351A2261C200DE051B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4DB7A7361A2261C200DE051B /* Build configuration list for PBXNativeTarget "Raining WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DB7A7371A2261C200DE051B /* Debug */,
+				4DB7A7381A2261C200DE051B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
