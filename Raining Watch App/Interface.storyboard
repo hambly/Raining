@@ -56,7 +56,7 @@
             <objects>
                 <controller id="gdX-wl-uQE" customClass="NotificationController">
                     <items>
-                        <imageView alignment="center" contentMode="scaleAspectFit" id="rtR-NG-Qcd"/>
+                        <imageView alignment="center" contentMode="scaleAspectFit" animationDuration="1" id="rtR-NG-Qcd"/>
                         <label alignment="center" text="Loading..." textAlignment="center" numberOfLines="0" id="s3u-C2-03g">
                             <fontDescription key="font" type="system" pointSize="13"/>
                         </label>

@@ -23,6 +23,7 @@
 		4DB7A72D1A2261C200DE051B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DB7A72C1A2261C200DE051B /* Interface.storyboard */; };
 		4DB7A72F1A2261C200DE051B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DB7A72E1A2261C200DE051B /* Images.xcassets */; };
 		4DB7A7321A2261C200DE051B /* Raining WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4DB7A7101A2261C200DE051B /* Raining WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4DC51D791A2298CA0052ADF8 /* MinutelyRainAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC51D781A2298CA0052ADF8 /* MinutelyRainAnalyzer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,8 @@
 		4DB7A72B1A2261C200DE051B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DB7A72C1A2261C200DE051B /* Interface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
 		4DB7A72E1A2261C200DE051B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4DC51D771A2298CA0052ADF8 /* MinutelyRainAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinutelyRainAnalyzer.h; sourceTree = "<group>"; };
+		4DC51D781A2298CA0052ADF8 /* MinutelyRainAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinutelyRainAnalyzer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +202,8 @@
 				4DB7A7191A2261C200DE051B /* InterfaceController.m */,
 				4DB7A71B1A2261C200DE051B /* NotificationController.h */,
 				4DB7A71C1A2261C200DE051B /* NotificationController.m */,
+				4DC51D771A2298CA0052ADF8 /* MinutelyRainAnalyzer.h */,
+				4DC51D781A2298CA0052ADF8 /* MinutelyRainAnalyzer.m */,
 				4DB7A71E1A2261C200DE051B /* GlanceController.h */,
 				4DB7A71F1A2261C200DE051B /* GlanceController.m */,
 				4DB7A7211A2261C200DE051B /* Images.xcassets */,
@@ -413,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DC51D791A2298CA0052ADF8 /* MinutelyRainAnalyzer.m in Sources */,
 				4DB7A71D1A2261C200DE051B /* NotificationController.m in Sources */,
 				4DB7A71A1A2261C200DE051B /* InterfaceController.m in Sources */,
 				4DB7A7201A2261C200DE051B /* GlanceController.m in Sources */,
@@ -543,7 +549,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Raining/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Raining;
 			};
 			name = Debug;
 		};
@@ -553,7 +559,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Raining/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Raining;
 			};
 			name = Release;
 		};
@@ -571,7 +577,7 @@
 				);
 				INFOPLIST_FILE = RainingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RainingTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Raining.app/Raining";
 			};
 			name = Debug;
@@ -586,7 +592,7 @@
 				);
 				INFOPLIST_FILE = RainingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RainingTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Raining.app/Raining";
 			};
 			name = Release;
@@ -602,7 +608,7 @@
 				);
 				IBSC_MODULE = Raining_WatchKit_Extension;
 				INFOPLIST_FILE = "Raining Watch App/Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Raining Watch App";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -616,7 +622,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				IBSC_MODULE = Raining_WatchKit_Extension;
 				INFOPLIST_FILE = "Raining Watch App/Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Raining Watch App";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -632,7 +638,7 @@
 				);
 				INFOPLIST_FILE = "Raining WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_NAME = "${TARGET_NAME}";
+				PRODUCT_NAME = "Raining WatchKit Extension";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -642,7 +648,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = "Raining WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_NAME = "${TARGET_NAME}";
+				PRODUCT_NAME = "Raining WatchKit Extension";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
