@@ -24,6 +24,8 @@
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",remoteNotification[@"url"],remoteNotification[@"coordinates"]]];
     
+    [self.image setImage:[UIImage imageNamed:@"NoRain"]];
+    
     [NSURLConnection sendAsynchronousRequest:[NSURLRequest requestWithURL: url] queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
         if (!connectionError){
             NSDictionary *weatherDict = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];

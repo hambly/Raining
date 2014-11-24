@@ -39,6 +39,8 @@
 
 - (void)handleActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)remoteNotification {
     NSLog(@"Loading action:%@",identifier);
+    
+    [self updateUserActivity:@"hello" userInfo:@{}];
 
 }
 

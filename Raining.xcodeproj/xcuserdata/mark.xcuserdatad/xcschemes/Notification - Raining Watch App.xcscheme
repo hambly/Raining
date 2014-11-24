@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4DB7A7241A2261C200DE051B"
-               BuildableName = "It&apos;s Raining Watch App.app"
+               BuildableName = "Raining Watch App.app"
                BlueprintName = "Raining Watch App"
                ReferencedContainer = "container:Raining.xcodeproj">
             </BuildableReference>
@@ -29,7 +29,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4DB7A6E21A225A7D00DE051B"
-               BuildableName = "It&apos;s Raining.app"
+               BuildableName = "Raining.app"
                BlueprintName = "Raining"
                ReferencedContainer = "container:Raining.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4DB7A70F1A2261C200DE051B"
-               BuildableName = "It&apos;s Raining WatchKit Extension.appex"
+               BuildableName = "Raining WatchKit Extension.appex"
                BlueprintName = "Raining WatchKit Extension"
                ReferencedContainer = "container:Raining.xcodeproj">
             </BuildableReference>
@@ -61,7 +61,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4DB7A7241A2261C200DE051B"
-            BuildableName = "It&apos;s Raining Watch App.app"
+            BuildableName = "Raining Watch App.app"
             BlueprintName = "Raining Watch App"
             ReferencedContainer = "container:Raining.xcodeproj">
          </BuildableReference>
@@ -85,7 +85,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4DB7A7241A2261C200DE051B"
-            BuildableName = "It&apos;s Raining Watch App.app"
+            BuildableName = "Raining Watch App.app"
             BlueprintName = "Raining Watch App"
             ReferencedContainer = "container:Raining.xcodeproj">
          </BuildableReference>
@@ -94,7 +94,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4DB7A7241A2261C200DE051B"
-            BuildableName = "It&apos;s Raining Watch App.app"
+            BuildableName = "Raining Watch App.app"
             BlueprintName = "Raining Watch App"
             ReferencedContainer = "container:Raining.xcodeproj">
          </BuildableReference>
@@ -112,7 +112,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4DB7A7241A2261C200DE051B"
-            BuildableName = "It&apos;s Raining Watch App.app"
+            BuildableName = "Raining Watch App.app"
             BlueprintName = "Raining Watch App"
             ReferencedContainer = "container:Raining.xcodeproj">
          </BuildableReference>

@@ -21,18 +21,18 @@
     NSMutableSet* categories = [NSMutableSet set];
     
     
-    UIMutableUserNotificationAction* openAction = [[UIMutableUserNotificationAction alloc] init];
-    openAction.title = @"Open";
-    openAction.identifier = @"open";
-    openAction.activationMode = UIUserNotificationActivationModeForeground;
-    openAction.authenticationRequired = NO;
+    UIMutableUserNotificationAction* notifyAction = [[UIMutableUserNotificationAction alloc] init];
+    notifyAction.title = @"Notify No Rain";
+    notifyAction.identifier = @"notifyAction";
+    notifyAction.activationMode = UIUserNotificationActivationModeForeground;
+    notifyAction.authenticationRequired = NO;
     
-    UIMutableUserNotificationCategory* watchCategory = [[UIMutableUserNotificationCategory alloc] init];
-    [watchCategory setActions:@[openAction]
+    UIMutableUserNotificationCategory* rainingCategory = [[UIMutableUserNotificationCategory alloc] init];
+    [rainingCategory setActions:@[notifyAction]
                     forContext:UIUserNotificationActionContextDefault];
-    watchCategory.identifier = @"watch";
+    rainingCategory.identifier = @"raining";
     
-    [categories addObject:watchCategory];
+    [categories addObject:rainingCategory];
 
     
     UIUserNotificationType types = UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert;
