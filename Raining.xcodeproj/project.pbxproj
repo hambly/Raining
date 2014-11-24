@@ -17,7 +17,6 @@
 		4DB7A7131A2261C200DE051B /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB7A7121A2261C200DE051B /* WatchKit.framework */; };
 		4DB7A71A1A2261C200DE051B /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7A7191A2261C200DE051B /* InterfaceController.m */; };
 		4DB7A71D1A2261C200DE051B /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7A71C1A2261C200DE051B /* NotificationController.m */; };
-		4DB7A7201A2261C200DE051B /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7A71F1A2261C200DE051B /* GlanceController.m */; };
 		4DB7A7221A2261C200DE051B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DB7A7211A2261C200DE051B /* Images.xcassets */; };
 		4DB7A7261A2261C200DE051B /* Raining Watch App.app in Resources */ = {isa = PBXBuildFile; fileRef = 4DB7A7251A2261C200DE051B /* Raining Watch App.app */; };
 		4DB7A72D1A2261C200DE051B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DB7A72C1A2261C200DE051B /* Interface.storyboard */; };
@@ -86,8 +85,6 @@
 		4DB7A7191A2261C200DE051B /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
 		4DB7A71B1A2261C200DE051B /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
 		4DB7A71C1A2261C200DE051B /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
-		4DB7A71E1A2261C200DE051B /* GlanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
-		4DB7A71F1A2261C200DE051B /* GlanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
 		4DB7A7211A2261C200DE051B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4DB7A7251A2261C200DE051B /* Raining Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Raining Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DB7A72B1A2261C200DE051B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -204,8 +201,6 @@
 				4DB7A71C1A2261C200DE051B /* NotificationController.m */,
 				4DC51D771A2298CA0052ADF8 /* MinutelyRainAnalyzer.h */,
 				4DC51D781A2298CA0052ADF8 /* MinutelyRainAnalyzer.m */,
-				4DB7A71E1A2261C200DE051B /* GlanceController.h */,
-				4DB7A71F1A2261C200DE051B /* GlanceController.m */,
 				4DB7A7211A2261C200DE051B /* Images.xcassets */,
 				4DB7A7151A2261C200DE051B /* Supporting Files */,
 			);
@@ -421,7 +416,6 @@
 				4DC51D791A2298CA0052ADF8 /* MinutelyRainAnalyzer.m in Sources */,
 				4DB7A71D1A2261C200DE051B /* NotificationController.m in Sources */,
 				4DB7A71A1A2261C200DE051B /* InterfaceController.m in Sources */,
-				4DB7A7201A2261C200DE051B /* GlanceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

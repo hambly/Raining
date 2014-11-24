@@ -7,6 +7,17 @@
 //
 
 #import "MinutelyRainAnalyzer.h"
+typedef enum {
+    RainTypeRainingNoStopHeavy,
+    RainTypeRainingNoStopLight,
+    RainTypeRainingWillStopHeavy,
+    RainTypeRainingWillStopLight,
+    RainTypeNotRainingWillStartNoStopHeavy,
+    RainTypeNotRainingWillStartNoStopLight,
+    RainTypeNotRainingWillStartWillStopHeavy,
+    RainTypeNotRainingWillStartWillStopLight,
+    RainTypeNoRain
+} RainType;
 
 @interface MinutelyRainAnalyzer ()
 
